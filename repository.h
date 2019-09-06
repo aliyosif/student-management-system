@@ -17,6 +17,8 @@ typedef unsigned char repo_rc;
  * Defines a repository object.
  */
 typedef struct repository {
+    sqlite3* dataSource;
+
     /**
      * Performs a query for an aggregate of results.
      * 

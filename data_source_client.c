@@ -218,7 +218,7 @@ int dsc_query(const char *sql, void* (*map)(sqlite3_stmt*), void *outData) {
         printf("\nError compiling SQL query: %s", sqlite3_errmsg(mainDb));
         return rc;
     }
-
+    
     rc = sqlite3_step(res);
     if (rc == SQLITE_ROW) {
         outData = (*map)(res);

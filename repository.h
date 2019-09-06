@@ -9,8 +9,8 @@
 #define _REPOSITORY_H_
 
 // Defines a repository response code
-#define REPOSITORY_OK 0
-#define REPOSITORY_ERR 1
+#define REPO_OK 0
+#define REPO_ERROR 1
 typedef unsigned char repo_rc;
 
 /**

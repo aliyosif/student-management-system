@@ -12,6 +12,9 @@
  * in which all students in the database are attending.
  */
 
+#ifndef _DATA_CONTRACT_H_
+#define _DATA_CONTRACT_H_
+
 #define MAX_CRED_LEN 45
 #define MAX_NAME_LEN 65
 
@@ -52,3 +55,5 @@ typedef struct student {
     char lastName[MAX_NAME_LEN];  // Last name of the student
     float gpa;                    // Student's overall GPA
 } student_t;
+
+#endif

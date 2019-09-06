@@ -5,6 +5,9 @@
  * This file defines a simple reusable CRUD repository.
  */
 
+#ifndef _REPOSITORY_H_
+#define _REPOSITORY_H_
+
 // Defines a repository response code
 #define REPOSITORY_OK 0
 #define REPOSITORY_ERR 1
@@ -63,3 +66,5 @@ typedef struct repository {
      */
     repo_rc (*removeById)(void*);
 } repository_t;
+
+#endif
